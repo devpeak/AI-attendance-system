@@ -3,7 +3,10 @@
 </head>
 <body>
 <h2>AI-Attendance-System</h2>
-Building a cloud-based solution built using <strong>Amazon Web Services (AWS)</strong> for <em>automatically recording and tracking classroom attendance</em> using facial recognition.
+<p align = "center">
+<img src = "https://user-images.githubusercontent.com/100518568/197471002-d915c95d-b78a-4d97-9824-1eabca7f3e00.png" width = "210mm" height ="300mm" alt = "AWSomeify Hackathon"/>
+</p>
+We are building a cloud-based solution built using <strong>Amazon Web Services (AWS)</strong> for <em>automatically recording and tracking classroom attendance</em> using facial recognition.
 <br>
 
 <h3>♦ Motivation ♦</h4>
