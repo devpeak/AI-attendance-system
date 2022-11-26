@@ -30,6 +30,28 @@ We are building a cloud-based solution built using <strong>Amazon Web Services (
  </dl>
  <h3> ♦ Flowchart ♦ </h3>
  <img src = "https://user-images.githubusercontent.com/100518568/197422492-c2e775ab-023d-4b07-89df-f5dd558ebc39.png" alt = "flowchart">
+ <br>
+ <h2>Overview of Face Detection and Face Comparison </h2>
+ <p> There are two primary applications of <b>machine learning</b> that analyze images containing faces: <em>face detection</em> and <em>face comparison</em>.</p>
+ <p>A face detection system is designed to answer the question: <strong>is there a face in this picture?</strong><p>
+ <ul>
+ <li>A face detection system determines the presence, location, scale, and (possibly) orientation of any face present in a still image or video frame.</li>
+ <li>This system is <strong><em> designed to detect the presence of faces</em></strong> regardless of attributes such as gender, age, and facial hair.</li>
+ </ul>
+ <br>
+ <p>A face comparison system is designed to answer the question: <strong>does the face in an image match the face in another image?</strong></p>
+ <ul>
+ <li>A face comparison system takes an image of a face and makes a prediction about whether the face matches other faces in a provided database.</li>
+ <li>Face comparison systems are <strong><em>designed to compare and predict potential matches of faces</em></strong> regardless of their expression, facial hair, and age.</li>
+ </ul>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
  <h3>References </h3>
  <ul>
  <li>https://scholarworks.gvsu.edu/cistechlib/340/</li>
