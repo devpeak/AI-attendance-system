@@ -105,16 +105,59 @@ region = your_aws_region</li>
 </pre>
 </dd>
 </dl>
+<br>
+<h2>Compare faces in images (console)</h2>
+<p> Let's see how to use the Amazon Rekognition console to compare faces within a set of images with multiple faces in them.</p>
+<p>When you specify a <b>Reference face</b> (source) and a <b>Comparison faces</b> (target) image, Rekognition compares the largest face in the source image (that is, the reference face) with up to 100 faces detected in the target image (that is, the comparison faces), and then finds how closely the face in the source matches the faces in the target image. The similarity score for each comparison is displayed in the <b>Results</b> pane.
+</p>
+<pre>
+If the <strong><em>target image</em></strong> contains multiple faces, Rekognition matches the face in the <strong><em>source image</em></strong> with up to 100 faces detected in <strong><em>target image</em></strong>, and then assigns a similarity score to each match.
+<br>
+If the <strong><em>source image</em></strong> contains multiple faces, the service detects the largest face in the <strong><em>source image</em></strong> and uses it to compare with each face detected in the <strong><em>target image</em></strong>.
+</pre>
+<p>For example, with the sample image shown on the left as a source image and the sample image on the right as a target image, Rekognition detects the face in the source image, compares it with each face detected in the target image, and displays a similarity score for each pair</p>
 
+<p align="center">
+<img src="https://user-images.githubusercontent.com/100518568/204121092-7e9208ab-eeb2-4342-89cc-55fe9f7934b9.png" width="455px" height="305px">
+</p>
+<br>
+<p>The following shows the faces detected in the target image and the similarity score for each face.<p>
+<p align="center">
+<img src="https://user-images.githubusercontent.com/100518568/204121494-23dc1d6c-1bcf-49ca-96ef-bccaa7550386.png" width="300px" height="344px">
+</p>
  
+ <hr>
  
- 
+ <h3>Compare faces in an image you provide</h3>
+ <p>You can upload your own source and target images for Rekognition to compare the faces in the images or you can specify a URL for the location of the images.</p>
+ <pre>Note: The image must be less than 5MB in size and must be of JPEG or PNG format.
+ </pre>
+ <h4>To compare faces in your images</h4>
+ <ol>
+ <li>Open the Amazon Rekognition console at https://console.aws.amazon.com/rekognition/.</li>
+ <li>Choose <strong>Face comparison</strong>.</li>
+ <li><dl>For your source image, do one of the following:
+ <dt>🔻Upload an image</dt>
+ <dd>- Choose <b>Upload</b> on the left, go to the location where you stored your source image, and then select the image.</dd>
+ <dt>🔻Use a URL </dt>
+ <dd>- Type the URL of your source image in the text box, and then choose <b>Go</b>.</dd>
+ </dl>
+ <li><dl>For your target image, do one of the following:
+ <dt>🔻Upload an image</dt>
+ <dd>- Choose <b>Upload</b> on the right, go to the location where you stored your source image, and then select the image</dd>
+ <dt>🔻Use a URL</dt>
+ <dd>- Type the URL of your source image in the text box, and then choose <b>Go</b>.</dd>
+ </dl>
+<li>Rekognition matches the largest face in your source image with up to 100 faces in the target image and then displays the similarity score for each pair in the <b>Results</b> pane. 
+ </li>
+</ol>
  
  
  
  
  <h3>References </h3>
  <ul>
+ <li>https://docs.aws.amazon.com/rekognition/latest/dg/compare-faces-console.html</li>
  <li>https://scholarworks.gvsu.edu/cistechlib/340/</li>
  <li>https://aws.amazon.com/rekognition/faqs/</li>
  <li>https://aws.amazon.com/lambda/faqs/ </li>
