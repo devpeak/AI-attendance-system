@@ -1,0 +1,70 @@
+/*.header{
+    
+    background-size: contain;
+    width:100%;
+    height: 200px;
+    border: 3px solid blue;
+    margin: 20px;
+    text-align: center;
+}
+*/
+.header h2{
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-size: 50px;
+    font-family: cursive;
+    background-color: teal;
+    color: yellow;
+    opacity:0.9;
+}
+
+.container{
+    background-color: teal;    
+}
+
+
+.branch{
+    text-align: center;
+    font-size:20px;
+    font-family: cursive;
+    color: black;
+        
+}
+
+.select_branch{
+    background-color: rgb(228, 28, 94);    
+    font-family: cursive;
+}
+
+.semester{
+    background-color: rgb(228, 28, 94);
+    font-family: cursive;
+}
+.sem{
+    text-align: center;
+    font-size:20px;
+    font-family: cursive;
+    color: black;
+    text-align: center;
+    margin-left: -180px;
+}
+.btn{
+    align-items: center;
+    text-align:center;
+}
+.submit{
+        
+        width: 75px;
+        height: 25px;
+        border: none;
+        outline: none;
+        border-radius: 49px;
+        cursor: pointer;
+        background-color: #e4761c;
+        color: rgb(15, 15, 16);
+        text-transform: uppercase;
+        font-weight: 600;
+        margin-top: 100px;
+        margin-left: -180px;
+    }
