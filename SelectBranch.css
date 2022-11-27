@@ -13,41 +13,43 @@
     padding-top: 50px;
     padding-bottom: 50px;
     font-size: 50px;
-    font-family: cursive;
-    background-color: teal;
-    color: yellow;
+    font-family: quattrocento;
+    color: black;
     opacity:0.9;
 }
 
 .container{
-    background-color: teal;    
+    background-color:white;   
 }
 
 
 .branch{
     text-align: center;
     font-size:20px;
-    font-family: cursive;
+    font-family: uattrocento;
     color: black;
+    margin-left:-40px;
         
 }
 
 .select_branch{
-    background-color: rgb(228, 28, 94);    
+    background-color: rgb(255, 255, 255);    
     font-family: cursive;
+    margin-left: 30px;
 }
 
 .semester{
-    background-color: rgb(228, 28, 94);
+    background-color: rgb(255, 255, 255);
     font-family: cursive;
+    margin-left: 30px;
 }
 .sem{
     text-align: center;
     font-size:20px;
-    font-family: cursive;
+    font-family: uattrocento;
     color: black;
     text-align: center;
-    margin-left: -180px;
+    margin-left: -210px;
 }
 .btn{
     align-items: center;
@@ -55,16 +57,72 @@
 }
 .submit{
         
-        width: 75px;
-        height: 25px;
+        width: 150px;
+        height: 50px;
         border: none;
         outline: none;
+        font-size:20px;
         border-radius: 49px;
         cursor: pointer;
-        background-color: #e4761c;
+        background-color: #fbf024;
         color: rgb(15, 15, 16);
         text-transform: uppercase;
         font-weight: 600;
-        margin-top: 100px;
-        margin-left: -180px;
+        margin-top: 30px;
+        margin-left: -40px;
+        font-family: cuattrocento;
     }
+    
+    .input{
+        height: 0;
+        width: 0;
+        visibility: hidden;
+    }
+    
+    .labell {
+        cursor: pointer;
+        text-indent: 100px;
+        width: 90px;
+        height: 45px;
+        background: red;
+        display: block;
+        border-radius: 75px;
+        position: relative;
+    }
+    
+    .labell:after {
+        content: '';
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        width: 40px;
+        height: 35px;
+        background: rgb(1, 0, 0);
+        border-radius: 45px;
+        transition: 0.3s;
+    }
+    
+    input:checked + .labell {
+        background: rgb(27, 252, 6);
+    }
+    
+    input:checked + .labell:after {
+        left: calc(100% - 5px);
+        transform: translateX(-100%);
+    }
+    
+    .labell:active:after {
+        width: 130px;
+    }
+    
+    
+    .toggle{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 20vh;
+        font-family: cursive;
+        font-size:20px;
+        margin-left:-60px;
+    }
+
